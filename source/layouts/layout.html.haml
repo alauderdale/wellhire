@@ -9,5 +9,6 @@
     %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
     = javascript_include_tag "bootstrap", "scripts"
   %body{:class => page_classes}
-      = yield
+    = partial "layouts/main_menu"
+    = yield
     = partial "layouts/footer"
