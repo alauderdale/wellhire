@@ -106,6 +106,7 @@ $secondary-color: #f47b2c;
 $tertiary-color: #ffd266;
 $light-gray-color: #f2f2f2;
 $gray-color:#dddddd;
+$green-color: #8ec979;
 $text-color: #555555;
 $dark-text-color: #4a4a4a;
 $black-color:#111111;
@@ -163,7 +164,7 @@ h2{
   font-family:$regular-font-name;
 }
 h3{
-  font-family:$display-heading-font-name;
+  font-family:$bold-font-name;
 }
 h4{
   font-family:$bold-font-name;
@@ -179,7 +180,7 @@ p  {font-size: .9em; line-height:$baseline*1.1;}
 h1 { font-size: 2.4em; line-height:$baseline*2.1; color:shade($primary-color,50%);}
 h2 { font-size: 2em; line-height:$baseline*1.8;}
 h3 { font-size: 2em; line-height:$baseline*1.8;}
-h4 { font-size: 1.2em; line-height:$baseline;}
+h4 { font-size: 1.5em; line-height:$baseline;}
 h5 { font-size: 1em; line-height:$baseline;}
 h6 { font-size: 0.9em; line-height:$baseline;}
 
@@ -253,6 +254,10 @@ blockquote{
   h1,h2,h3,h4,h5,h6,p,a,blockquote{
     color:white!important;
   }
+}
+
+.green-text{
+  color:$green-color;
 }
 
 
@@ -674,6 +679,31 @@ footer{
 .highlight-hero-text{
   color:$tertiary-color;
   font-family:$bold-font-name;
+}
+
+//how it works
+
+//test table
+
+.test-table-container{
+  background-color:white;
+  height:500px;
+  overflow:scroll;
+  h1,h2,h3,h4,h5,h6,p{
+    color:$text-color!important;
+  }
+  .test-table{
+    table{
+      tbody{
+        tr{
+         td{
+          padding:$baseline 0;
+         }
+        }
+      }
+    }
+  }
+  
 }
 
 

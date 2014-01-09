@@ -1,0 +1,24 @@
+.test-table-container
+	.test-th.padding-top
+		%h4.text-center
+			We Found
+			%span.green-text
+				31
+			Tests
+	.test-table.table-responsive
+		%table.table.table-striped
+			%thead
+				%tr
+					%th.padding-left
+						Test Title
+					%th.text-right.padding-right
+						Testing Time
+			%tbody
+				-20.times do
+					%tr
+						%td.padding-left
+							%i.icon-check.green-text.half-margin-right
+							%a{:href=>"#"}
+								Business Communication II
+						%td.text-right.padding-right
+							20 min
