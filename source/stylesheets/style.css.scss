@@ -591,6 +591,15 @@ section{
     li{
       font-size:.7em;
       text-transform:uppercase;
+      &.active{
+        a{
+          background:none;
+          color:$primary-color;
+          &:hover{
+            background:none;
+          }
+        }
+      }
       a{
         @include transition-duration(.3s);
       }

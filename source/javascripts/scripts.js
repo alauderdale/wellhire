@@ -1,11 +1,13 @@
 $(document).ready(function(){
 
+	//page scroller call
+	$('#wrapper').pageScroller({
 
-	$( "#menu-button" ).click(function() {
-	  $( ".menu-drop" ).toggleClass( "menu-show" );
-	  $( "body" ).toggleClass( "nav-open" );
-	  $( "#menu-button i" ).toggleClass( "icon-reorder icon-remove" );
+    navigation: '#main-navigation',
+    scrollOffset: -50 ,
+    animationSpeed: 1500  
 
 	});
+
 
 });
