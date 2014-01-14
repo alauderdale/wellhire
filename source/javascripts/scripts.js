@@ -17,7 +17,12 @@ $(document).ready(function(){
 	    slidesSpacing: 0,
 	    globalCaption: true,
 	    autoScaleSliderWidth: 682,     
-	    autoScaleSliderHeight: 410
+	    autoScaleSliderHeight: 410,
+	        	autoPlay: {
+	    		// autoplay options go gere
+	    		enabled: true,
+	    		pauseOnHover: true
+    		}
 	  }).data('royalSlider');
 	  $('#slider-next').click(function() {
 	    rsi.next();

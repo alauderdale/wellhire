@@ -4,509 +4,987 @@
     <meta charset='utf-8'>
     <meta content='IE=edge,chrome=1' http-equiv='X-UA-Compatible'>
     <meta content='width=device-width, initial-scale=1.0' name='viewport'>
-    <title>Eternal Contrast</title>
+    <title>Wellhire</title>
     <link href="stylesheets/bootstrap.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/royal-slider/royalslider.css" media="screen" rel="stylesheet" type="text/css" />
+    <link href="stylesheets/royal-slider/rs-default.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/font-awesome.css" media="screen" rel="stylesheet" type="text/css" />
     <link href="stylesheets/style.css" media="screen" rel="stylesheet" type="text/css" />
-    <script src='http://code.jquery.com/jquery-latest.min.js' type='text/javascript'></script>
+    <!-- %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"} -->
+    <script src="javascripts/jquery.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.pagescroller.lite.js" type="text/javascript"></script>
+    <script src="javascripts/jquery.royalslider.js" type="text/javascript"></script>
     <script src="javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="javascripts/scripts.js" type="text/javascript"></script>
   </head>
   <body class='index'>
     <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
+      <!-- Brand and toggle get grouped for better mobile display -->
       <div class='container'>
-        <a class='navbar-brand logo' href='index.html'></a>
-        <div class='nav-menu pull-right'>
-          <ul class='nav navbar-nav navbar-right'>
-            <li>
-              <a href='javaScript:void(0);' id='menu-button'>
-                <i class='icon-reorder primary-text-color'></i>
-              </a>
-            </li>
-          </ul>
+        <div class='navbar-header'>
+          <button class='navbar-toggle' data-target='#bs-example-navbar-collapse-1' data-toggle='collapse' type='button'>
+            <span class='sr-only'>Toggle navigation</span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+            <span class='icon-bar'></span>
+          </button>
+          <a class='navbar-brand' href='index.html'>
+            <div class='logo'></div>
+          </a>
         </div>
-      </div>
-    </nav>
-    <nav class='menu-drop'>
-      <div class='container double-padding-top double-padding-bottom'>
-        <div class='row'>
-          <div class='col-lg-3'></div>
-          <div class='col-lg-6'>
-            <ul class='inline text-center no-padding-left double-margin-bottom'>
-              <li class='text-center'>
-                <a href='index.html'>
-                  Home
-                </a>
+        <!-- Collect the nav links, forms, and other content for toggling -->
+        <div class='collapse navbar-collapse' id='bs-example-navbar-collapse-1'>
+          <div class='pageScrollerNav' id='main-navigation'>
+            <ul class='nav navbar-nav navbar-right'>
+              <li class='scroller-link'>
+                <a href='index.html'>Home</a>
               </li>
-              <li class='text-center'>
-                •
+              <li class='scroller-link'>
+                <a href='index.html#how-it-works'>How it works</a>
               </li>
-              <li class='text-center'>
-                <a href='about.html'>
-                  About Me
-                </a>
+              <li class='scroller-link'>
+                <a href='index.html#job-tests'>Job Tests</a>
               </li>
-              <li class='text-center'>
-                •
+              <li class='scroller-link'>
+                <a href='index.html#features'>Features</a>
               </li>
-              <li class='text-center'>
-                <a href='mailto:alauderdale@mac.com'>
-                  Contact
+              <li class='scroller-link'>
+                <a href='index.html#pricing'>Pricing</a>
+              </li>
+              <li>
+                <a href='contact.html'>Contact</a>
+              </li>
+              <li>
+                <a href='log-in.html'>Log In</a>
+              </li>
+              <li>
+                <a class='btn navbar-btn btn-default trial-btn' href='#'>
+                  Free Trial
                 </a>
               </li>
             </ul>
-            <div class='divider'></div>
           </div>
-          <div class='col-lg-3'></div>
         </div>
       </div>
-      <div class='container'>
-        <div class='row'>
-          <p class='text-center bold-font-name'>
-            CASE STUDIES
-          </p>
-        </div>
-      </div>
-      <a class='text-center' href='makeena.html'>
-        <section>
+    </nav>
+    <script>
+      $(document).ready(function(){
+      
+      	//page scroller call
+      	$('#wrapper').pageScroller({
+      
+          navigation: 'li.scroller-link',
+          scrollOffset: -50 ,
+        animationSpeed: 1000  
+      
+      	});
+      
+      });
+    </script>
+    <div id='wrapper'>
+      <section class='section primary-bg invert-section no-padding-bottom' id='home-hero'>
+        <div class='hero-info'>
           <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  makeena
-                </h1>
-                <p>
-                  Branding, Web Design, Style Guide, UX
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <a class='text-center' href='wli.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  Wealth Legacy Institute
-                </h1>
-                <p>
-                  Branding, Web Design, Style Guide, UX
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <a class='text-center' href='outflow.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  Outflow
-                </h1>
-                <p>
-                  Branding, Web Design, UX
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <a class='text-center' href='mianzi.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12 no-margin-bottom'>
+            <div class='row text-center'>
+              <div class='col-lg-2 col-md-2'></div>
+              <div class='col-lg-8 col-md-8'>
                 <h1>
-                  mianzi bike co
+                  Hiring Decisions Made Easy.
                 </h1>
-                <p>
-                  Custom Logotype
-                </p>
+                <h2 class='double-margin-bottom'>
+                  Finding the right job candidates can be
+                  <span class='highlight-hero-text'>
+                    simple
+                  </span>
+                  ,
+                  <span class='highlight-hero-text'>
+                    cheap
+                  </span>
+                  &
+                  <span class='highlight-hero-text'>
+                    fast.
+                  </span>
+                </h2>
+                <div class='btn btn-primary btn-xl' id='find-out-how'>
+                  Find Out How
+                </div>
               </div>
+              <div class='col-lg-2 col-md-2'></div>
             </div>
           </div>
-        </section>
-      </a>
-      <a class='text-center' href='chronotrack.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  Chronotrack Live
-                </h1>
-                <p>
-                  Web Design
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <a class='text-center' href='ucps.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  Union Colony Preperatory School
-                </h1>
-                <p>
-                  Web Design, UX
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <a class='text-center' href='logos.html'>
-        <section>
-          <div class='container'>
-            <div class='row'>
-              <div class='com-md-12'>
-                <h1 class='no-margin-bottom'>
-                  Select Logos
-                </h1>
-                <p>
-                  Branding
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-      </a>
-      <div class='container double-margin-top'>
-        <div class='row'>
-          <div class='col-lg-3'></div>
-          <div class='col-lg-6'>
-            <div class='divider'></div>
-          </div>
-          <div class='col-lg-3'></div>
         </div>
-      </div>
-      <div class='container double-padding-top double-padding-bottom'>
-        <div class='row'>
-          <div class='col-lg-3'></div>
-          <div class='col-lg-6'>
-            <ul class='inline text-center no-padding-left double-margin-bottom social-menu'>
-              <li class='text-center'>
-                <a href='#'>
-                  <i class='icon-dribbble'></i>
-                </a>
-              </li>
-              <li class='text-center'>
-                <a href='#'>
-                  <i class='icon-twitter'></i>
-                </a>
-              </li>
-              <li class='text-center'>
-                <a href='#'>
-                  <i class='icon-github'></i>
-                </a>
-              </li>
-            </ul>
+        <div class='logos'>
+          <div class='container'>
+            <div class='row'>
+              <div class='col-lg-12'>
+                <div class='text-center'>
+                  <img class='full-width-image' src='images/logos.png'>
+                </div>
+              </div>
+            </div>
           </div>
-          <div class='col-lg-3'></div>
         </div>
-      </div>
-    </nav>
-    <div class='main-contents'>
-      <script>
-        $(function() {
-        	$('a[href*=#]:not([href=#])').click(function() {
-        		if (location.pathname.replace(/^\//,'') == this.pathname.replace(/^\//,'') && location.hostname == this.hostname) {
-        			var target = $(this.hash);
-        			target = target.length ? target : $('[name=' + this.hash.slice(1) +']');
-        			if (target.length) {
-        			$('html,body').animate({
-        				scrollTop: target.offset().top-50
-        			}, 1500);
-        			return false;
-        		}
-        	}
-        	});
-        });
-      </script>
-      <section class='primary-bg invert-section'>
+      </section>
+      <section class='section' id='how-it-works'>
         <div class='container'>
           <div class='row'>
-            <div class='col-md-8 col-sm-8'>
-              <h1 class='text-uppercase'>
-                Design
-                <br>
-                Is more than
-                <br>
-                pretty pixels
+            <div class='col-lg-12'>
+              <h1 class='text-center'>
+                How it Works
               </h1>
-              <h3 class='double-margin-bottom'>
-                Welcome to the design portfolio of Alex Lauderdale.
-                <br>
-                I offer web development & design services.
-              </h3>
-              <a class='btn btn-xl btn-default btn-invert double-margin-bottom' href='#work' id='see'>
-                See The Work
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-12'>
+              <div class='text-center padded'>
+                <img class='full-width-image' src='images/how_it_works.png'>
+              </div>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <div class='padded'>
+                <p>
+                  <span class='extra-bold-font-name enhanced-font'>
+                    Browse tests
+                  </span>
+                  that fit your job opening.  Choose from 100+ skill areas, add narrative questions, and assign to job candidates.
+                </p>
+              </div>
+            </div>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <div class='padded'>
+                <p>
+                  <span class='extra-bold-font-name enhanced-font'>
+                    Test Job Candidates
+                  </span>
+                  from your job posting, via email, or anywhere by invitation.  Candidates simply click and test.
+                </p>
+              </div>
+            </div>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <div class='padded'>
+                <p>
+                  <span class='extra-bold-font-name enhanced-font'>
+                    Compare candidates
+                  </span>
+                  to find the best fit for your position. Plus, review social background, view online profiles, and more!
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='secondary-bg invert-section'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-7'>
+              <a href=''>
+                <img class='full-width-image double-margin-bottom' src='images/video_thumb.png'>
               </a>
             </div>
-            <div class='col-md-4 col-sm-4'>
-              <img class='max-width' src='images/wire.png'>
+            <div class='col-lg-5'>
+              <h1>
+                See It in Action
+              </h1>
+              <p>
+                More than just employment tests, Wellhire allows you to qualify interested candidates directly from your online job postings- without exchanging a single email.
+              </p>
+              <a class='btn btn-xl btn-wire' href='#'>
+                Start Using Wellhire
+              </a>
             </div>
+          </div>
+        </div>
+      </section>
+      <section class='section' id='job-tests'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-1 col-md-1 col-sm-1'></div>
+            <div class='col-lg-10 col-md-10 col-sm-10'>
+              <div class='text-center'>
+                <h1>
+                  Wellhire Job Tests
+                </h1>
+                <h2>
+                  Save time by testing job candidates first, with Wellhire.  Our tests are created by professionals, and cover more than 100 career skill areas.
+                </h2>
+              </div>
+            </div>
+            <div class='col-lg-1 col-md-1 col-sm-1'></div>
+          </div>
+        </div>
+      </section>
+      <section class='primary-bg invert-section'>
+        <div class='container'>
+          <div class='row margin-bottom'>
+            <div class='col-lg-12 col-md-12 col-sm-12'>
+              <div class='text-center'>
+                <h3>
+                  Explore Our Job Tests
+                </h3>
+              </div>
+            </div>
+          </div>
+          <div class='row margin-bottom'>
+            <div class='col-lg-2 col-md-2 col-sm-2'></div>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <h4 class='text-right'>
+                Select a Category
+              </h4>
+            </div>
+            <div class='col-lg-3 col-md-3 col-sm-3'>
+              <select class='form-control'>
+                <option>
+                  Essential Skills
+                </option>
+                <option>
+                  Essential Skills
+                </option>
+                <option>
+                  Essential Skills
+                </option>
+              </select>
+            </div>
+            <div class='col-lg-3'></div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-12'>
+              <div class='margin-bottom'>
+                <div class='test-table-container'>
+                  <div class='test-th padding-top'>
+                    <h4 class='text-center'>
+                      We Found
+                      <span class='green-text'>
+                        31
+                      </span>
+                      Tests
+                    </h4>
+                  </div>
+                  <div class='test-table table-responsive'>
+                    <table class='table table-striped'>
+                      <thead>
+                        <tr>
+                          <th class='padding-left'>
+                            Test Title
+                          </th>
+                          <th class='text-right padding-right'>
+                            Testing Time
+                          </th>
+                        </tr>
+                      </thead>
+                      <tbody>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                        <tr>
+                          <td class='padding-left'>
+                            <i class='icon-check green-text half-margin-right'></i>
+                            <a data-target='#myModal' data-toggle='modal' href=''>
+                              Business Communication II
+                            </a>
+                          </td>
+                          <td class='text-right padding-right'>
+                            20 min
+                          </td>
+                        </tr>
+                      </tbody>
+                    </table>
+                  </div>
+                </div>
+              </div>
+              <p class='text-center'>
+                Need a specific assessment?
+                <a class='white-link underline-link' href='contact.html'>
+                  Contact us.
+                </a>
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='section no-padding-bottom' id='features'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-12 col-md-12 col-sm-12'>
+              <h1 class='text-center no-margin-bottom'>
+                Wellhire Features
+              </h1>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section class='slider-container no-padding-bottom'>
+        <div class='container'>
+          <div class='row'>
+            <div class='col-lg-1'></div>
+            <div class='col-lg-10'>
+              <div class='laptopBg'>
+                <img class='imgBg' src='images/screen.png'>
+                <div class='royalSlider rsDefaultInv' id='slider-in-laptop'>
+                  <div>
+                    <img class='full-width' src='images/slide-1.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        COLLECT JOB CANDIDATES
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Collect new candidates directly from your job post, without even meeting them.
+                      </h2>
+                    </div>
+                  </div>
+                  <div>
+                    <img class='full-width' src='images/slide-2.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        compare job candidates
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Clearly compare job candidates by skill test results
+                      </h2>
+                    </div>
+                  </div>
+                  <div>
+                    <img class='full-width' src='images/slide-3.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        background check
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Wellhire profiles include social media "background check" for job candidates
+                      </h2>
+                    </div>
+                  </div>
+                  <div>
+                    <img class='full-width' src='images/slide-1.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        COLLECT JOB CANDIDATES
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Collect new candidates directly from your job post, without even meeting them.
+                      </h2>
+                    </div>
+                  </div>
+                  <div>
+                    <img class='full-width' src='images/slide-2.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        compare job candidates
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Clearly compare job candidates by skill test results
+                      </h2>
+                    </div>
+                  </div>
+                  <div>
+                    <img class='full-width' src='images/slide-3.png'>
+                    <div class='rsCaption'>
+                      <h3 class='text-uppercase'>
+                        background check
+                      </h3>
+                      <h2 class='no-margin-bottom'>
+                        Wellhire profiles include social media "background check" for job candidates
+                      </h2>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-lg-1'></div>
           </div>
         </div>
       </section>
       <section>
         <div class='container'>
           <div class='row double-margin-bottom'>
-            <div class='col-md-1 col-sm-1'></div>
-            <div class='col-md-10 col-sm-10'>
-              <div class='text-center'>
-                <h2>
-                  Dream to build a better web.
-                </h2>
-                <h3>
-                  I love the internet! I specialize in web and mobile design. If you need, I can build things to.
-                </h3>
-              </div>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <div class='text-line'></div>
             </div>
-            <div class='col-md-1 col-sm-1'></div>
-          </div>
-          <div class='row'>
-            <div class='col-md-4 col-sm-4'>
-              <div class='padded'>
-                <img class='double-margin-bottom home-icon' src='images/design_icon.png'>
-                  <h4>
-                    Branding
-                  </h4>
-                  <p>
-                    Behing every brand is a story to tell. What's yours? I look forward to helping you bring your brand to life.
-                  </p>
-                </img>
-              </div>
-            </div>
-            <div class='col-md-4 col-sm-4'>
-              <div class='padded'>
-                <img class='double-margin-bottom home-icon' src='images/ux_icon.png'>
-                  <h4>
-                    UX
-                  </h4>
-                  <p>
-                    With 4 years of real world UX expierence, I have solved a lot. Let's make your idea shine as simply and beautifully as possible.
-                  </p>
-                </img>
-              </div>
-            </div>
-            <div class='col-md-4 col-sm-4'>
-              <div class='padded'>
-                <img class='double-margin-bottom home-icon' src='images/dev_icon.png'>
-                  <h4>
-                    Develop
-                  </h4>
-                  <p>
-                    My skills don't end in photoshop. I can build your website and custom fit it with a CMS designed specifically for your needs.
-                  </p>
-                </img>
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-      <div id='work'>
-        <div id='work'></div>
-        <section class='invert-section' style='background-color:#ef7738;'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center'>
-                  <h1 class='double-margin-bottom'>
-                    Makeena
-                  </h1>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='makeena.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-            <div class='row'>
-              <div class='col-md-1'></div>
-              <div class='col-md-10'>
-                <img class='full-width' src='images/makeena_app_teaser.png'>
-              </div>
-              <div class='col-md-1'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section no-padding-bottom' style='background-color:#cbb778;'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center'>
-                  <h1 class='double-margin-bottom'>
-                    Wealth Legacy Institute
-                  </h1>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='wli.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-            <div class='row'>
-              <div class='col-md-1'></div>
-              <div class='col-md-10'>
-                <img class='full-width' src='images/wli_teaser.png'>
-              </div>
-              <div class='col-md-1'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section' style='background-color:#f33a2c;'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center'>
-                  <h1 class='double-margin-bottom'>
-                    Outflow
-                  </h1>
-                  <img class='full-width double-margin-bottom' src='images/outflow_teaser.png'>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='outflow.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section' style='background: url(images/mianzi_bg.jpg)#bd5327 0 -287px;'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center white-text'>
-                  <h1 class='double-margin-bottom'>
-                    mianzi bike co
-                  </h1>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='mianzi.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section' style='background: #001527 0 -287px;'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center white-text'>
-                  <h1 class='double-margin-bottom'>
-                    Chronotrack Live
-                  </h1>
-                  <img class='text-center triple-margin-bottom' src='images/chronotrack_tag_sm.png'>
-                  <div class='clearfix'></div>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='chronotrack.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section' style='background: url(images/ucps_ipad.png) no-repeat center bottom #0055a5'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center white-text'>
-                  <h1 class='double-margin-bottom'>
-                    Union Colony Preperatory School
-                  </h1>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='ucps.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-          </div>
-        </section>
-        <section class='invert-section' style='background:#3b3e47 url(images/logo_teaser.png) no-repeat 780px -160px'>
-          <div class='container'>
-            <div class='row'>
-              <div class='col-md-2'></div>
-              <div class='col-md-8'>
-                <div class='text-center'>
-                  <h1 class='double-margin-bottom'>
-                    Logos
-                  </h1>
-                  <a class='btn btn-lg btn-default btn-invert double-margin-bottom' href='logos.html'>
-                    View The Case Study
-                  </a>
-                </div>
-              </div>
-              <div class='col-md-2'></div>
-            </div>
-          </div>
-        </section>
-      </div>
-      <script src="javascripts/isotope.js" type="text/javascript"></script>
-      <script src="javascripts/dribbble.js" type="text/javascript"></script>
-      <script src="javascripts/load_dribbble.js" type="text/javascript"></script>
-      <section class='dribbble' style='background-color:#f2f2f2;'>
-        <div class='container'>
-          <div class='row'>
-            <div class='col-md-7 col-sm-7'>
-              <div class='margin-bottom'>
-                <h1>
-                  Here's What I'm Up to Now
-                </h1>
-              </div>
-            </div>
-          </div>
-          <div class='row'>
-            <div class='col-md-12 col-sm-12'>
-              <h3>
-                Below is some of my recent work from Dribbble.
-                <a href='http://dribbble.com/Alauderdale10'>
-                  Visit me there
-                </a>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <h3 class='text-center'>
+                Included Features
               </h3>
             </div>
+            <div class='col-lg-4 col-md-4 col-sm-4'>
+              <div class='text-line'></div>
+            </div>
+          </div>
+          <div class='row icons double-margin-bottom'>
+            <div class='col-lg-12'>
+              <!-- icon row -->
+              <div class='row'>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-ln.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Candidates can import Linked-In profile to easily share information about themselves
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-dashboard.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Custom Dashboard provides hiring companies with quick stats at their fingertips.
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-100.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Unlimited access to test catalog covering 100+ career areas
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- icon row -->
+              <div class='row'>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-people.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Access by unlimited team members
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-thumbs-up.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Easily check the social media background of job candidates
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-check.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Test candidates from your job post, without exchanging a single email
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!-- icon row -->
+              <div class='row'>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-head.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Clearly compare job candidate knowledge
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-bill.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        Clear and simple pricing, with automated billing
+                      </p>
+                    </div>
+                  </div>
+                </div>
+                <!-- icon -->
+                <div class='col-lg-4 col-md-4 col-sm-4'>
+                  <div class='row margin-bottom'>
+                    <div class='col-lg-2 col-md-2 col-sm-2'>
+                      <img class='margin-bottom' src='images/home-icon-cloud.png'>
+                    </div>
+                    <div class='col-lg-10 col-md-10 col-sm-10'>
+                      <p>
+                        100% Web based, delivered from the cloud
+                      </p>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class='row icons'>
+            <div class='col-lg-12 text-center'>
+              <a class='btn btn-xl btn-primary'>
+                Try it Free
+              </a>
+            </div>
           </div>
         </div>
       </section>
-      <section class='no-padding-top no-padding-bottom'>
-        <div id='dribbble-portfolio'></div>
+      <section class='primary-bg invert-section section' id='pricing'>
+        <div class='container'>
+          <div class='row margin-bottom'>
+            <div class='col-lg-12 col-md-12 col-sm-12'>
+              <div class='text-center double-margin-bottom'>
+                <h1>
+                  Clear & Simple Pricing
+                </h1>
+                <h2>
+                  Try Wellhire for
+                  <span class='bold-font-name'>
+                    2 days free!
+                  </span>
+                  With no risk
+                </h2>
+              </div>
+              <div class='row'>
+                <div class='col-lg-2 col-md-2 col-sm-2'></div>
+                <div class='col-lg-8 col-md-8 col-sm-8'>
+                  <div class='off-white-bg double-padded price-table no-padding-bottom'>
+                    <div class='text-center'>
+                      <div class='double-margin-bottom'>
+                        <h5 class='double-margin-bottom'>
+                          Pay monthly. Cancel any time.
+                        </h5>
+                        <h1>
+                          $9.99
+                        </h1>
+                        <h2 class='no-margin-bottom'>
+                          month
+                        </h2>
+                        <p>
+                          <span class='bold-font-name'>
+                            2
+                          </span>
+                          Completed tests per month
+                        </p>
+                      </div>
+                      <div class='double-margin-bottom'>
+                        <h1>
+                          $19.99
+                        </h1>
+                        <h2 class='no-margin-bottom'>
+                          for each additional test
+                        </h2>
+                      </div>
+                      <div class='double-margin-bottom'>
+                        <a class='btn btn-xl btn-primary'>
+                          START FREE TRIAL
+                        </a>
+                      </div>
+                    </div>
+                  </div>
+                  <div class='white-bg double-padded price-points'>
+                    <div class='row double-margin-top'>
+                      <div class='col-lg-2'></div>
+                      <div class='col-lg-8'>
+                        <p class='no-margin-bottom'>
+                          <i class='icon-check green-text'></i>
+                          <span class='text-uppercase bold-font-name'>
+                            UNLIMITED
+                          </span>
+                          Member Accounts.
+                        </p>
+                        <p class='no-margin-bottom'>
+                          <i class='icon-check green-text'></i>
+                          <span class='text-uppercase bold-font-name'>
+                            UNLIMITED
+                          </span>
+                          Member Accounts.
+                        </p>
+                        <p class='no-margin-bottom'>
+                          <i class='icon-check green-text'></i>
+                          <span class='text-uppercase bold-font-name'>
+                            HALF THE PRICE
+                          </span>
+                          of other assessment services.
+                        </p>
+                      </div>
+                      <div class='col-lg-2'></div>
+                    </div>
+                  </div>
+                </div>
+                <div class='col-lg-2 col-md-2 col-sm-2'></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+      <section id='testimonials'>
+        <div class='container'>
+          <div class='row double-margin-bottom'>
+            <div class='col-lg-12'>
+              <h1 class='text-center'>
+                The Highest Standards, The Happiest Customers
+              </h1>
+            </div>
+          </div>
+          <div class='row'>
+            <div class='col-lg-6 col-md-6 col-sm-6'>
+              <div class='testimonial double-margin-bottom'>
+                <div class='double-padded testimonial-bub double-margin-bottom'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit faucibus odio, lobortis tristique libero feugiat eget. Nullam pretium elit non nisi scelerisque, sed volutpat turpis tempor. Aenean
+                  </p>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                    <img class='img-circle full-width-image' src='images/avatar.png'>
+                  </div>
+                  <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                    <h5 class='no-margin-bottom'>
+                      John Smith
+                    </h5>
+                    <h6>
+                      Title
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class='col-lg-6 col-md-6 col-sm-6'>
+              <div class='testimonial double-margin-bottom'>
+                <div class='double-padded testimonial-bub double-margin-bottom'>
+                  <p>
+                    Lorem ipsum dolor sit amet, consectetur adipiscing elit. Ut blandit faucibus odio, lobortis tristique libero feugiat eget. Nullam pretium elit non nisi scelerisque, sed volutpat turpis tempor. Aenean
+                  </p>
+                </div>
+                <div class='row'>
+                  <div class='col-lg-3 col-md-3 col-sm-3 col-xs-3'>
+                    <img class='img-circle full-width-image' src='images/avatar.png'>
+                  </div>
+                  <div class='col-lg-9 col-md-9 col-sm-9 col-xs-9'>
+                    <h5 class='no-margin-bottom'>
+                      John Smith
+                    </h5>
+                    <h6>
+                      Title
+                    </h6>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
       </section>
     </div>
     <footer>
       <div class='container'>
         <div class='row'>
-          <div class='col-lg-6'>
-            <p class='no-margin-bottom pull-left'>
-              © 2013 Eternal Contrast +1.970.396.3943
-            </p>
-          </div>
-          <div class='col-lg-6'>
-            <p class='no-margin-bottom text-right pull-right'>
-              <a href='mailto:alauderdale@mac.com'>
-                <i class='icon-envelope half-margin-right'></i>
-                Let's Chat
-              </a>
-            </p>
+          <div class='col-lg-12'>
+            <div class='pull-left'>
+              <nav>
+                <ul class='list-inline pull-left footer-nav'>
+                  <li>
+                    <a href='#'>
+                      Home
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Contact
+                    </a>
+                  </li>
+                  <li>
+                    <a href='#'>
+                      Login
+                    </a>
+                  </li>
+                  <li>
+                    © 2013 Wellhire All rights reserved.
+                  </li>
+                </ul>
+              </nav>
+            </div>
+            <div class='pull-right'>
+              <ul class='list-inline pull-right footer-social-menu'>
+                <li>
+                  <a href='#'>
+                    l
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    i
+                  </a>
+                </li>
+                <li>
+                  <a href='#'>
+                    f
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
     </footer>
+    <div aria-hidden='true' aria-labelledby='myModalLabel' class='modal fade' id='myModal' role='dialog' tabindex='-1'>
+      <div class='modal-dialog'>
+        <div class='modal-content'>
+          <div class='modal-header'>
+            <button aria-hidden='true' class='close' data-dismiss='modal' type='button'>×</button>
+          </div>
+          <div class='modal-body'>
+            <div class='page-header double-margin-bottom'>
+              <h2 class='text-uppercase no-margin-bottom'>
+                Business Communication II (LITE)
+              </h2>
+            </div>
+            <p class='text-muted'>
+              Business Communication measures knowledge of communicating in the workplace. It measures the skills necessary to communicate effectively with clients and coworkers at all levels.Subject areas covered in this assessment include:
+            </p>
+            <ul>
+              <li>
+                Basic Electronic Communication (E-mail, Fax, Teleconferencing, Voice Mail)
+              </li>
+              <li>
+                Listening (Active Listening, Barriers, Benefits, Questions)
+              </li>
+              <li>
+                Verbal Communication (Feedback, Instructions, Telephone)
+              </li>
+              <li>
+                Written Communication (Letters, Memos, Reports)
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
   </body>
 </html>

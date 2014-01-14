@@ -919,6 +919,22 @@ footer{
   background:url(../images/contact-map.png);
 }
 
+// modals
+
+.modal-content{
+  padding:$baseline*2;
+}
+.modal-header{
+  border:none;
+}
+
+@media screen and (min-width: 768px) {
+  .modal-dialog {
+    width: 960px;
+    margin: 210px auto;
+  }
+}
+
 
 //responsify
 
