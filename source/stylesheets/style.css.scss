@@ -107,9 +107,11 @@ $tertiary-color: #ffd266;
 $light-gray-color: #f2f2f2;
 $gray-color:#dddddd;
 $green-color: #8ec979;
+$yellow-color:#ffd266;
 $text-color: #555555;
 $dark-text-color: #4a4a4a;
 $black-color:#111111;
+
 
 // font vars
 
@@ -179,7 +181,7 @@ h6{
 p  {font-size: .9em; line-height:$baseline*1.1;}
 h1 { font-size: 2.4em; line-height:$baseline*2.1; color:shade($primary-color,50%);}
 h2 { font-size: 2em; line-height:$baseline*1.8;}
-h3 { font-size: 2em; line-height:$baseline*1.8;}
+h3 { font-size: 2em; line-height:$baseline*1.8; color:shade($primary-color,50%);}
 h4 { font-size: 1.5em; line-height:$baseline;}
 h5 { font-size: 1em; line-height:$baseline;}
 h6 { font-size: 0.9em; line-height:$baseline;}
@@ -543,7 +545,7 @@ ul.inline{
 //images
 
 .full-width-image{
-  width:100%;
+  max-width:100%;
   height:auto;
 }
 
@@ -761,6 +763,33 @@ footer{
     }
   }
 
+//testimonials
+
+.testimonial{
+  .testimonial-bub{
+    background-color:$yellow-color;
+    p{
+      color:white;
+      font-size:.9em;
+      font-style:italic;
+      line-height:$baseline*1.5;
+      font-family:$extra-bold-font-name;
+      margin:0;
+      padding:0; 
+    }
+
+    &:after{
+      content:"";
+      float: left;
+      width: 30px;
+      height:30px;
+      background:url(../images/testimonial-bub-arrow.png) no-repeat top;
+      display:block;
+      position:relative;
+      top:45px;
+    }
+  }
+}
 
 
 //responsify
