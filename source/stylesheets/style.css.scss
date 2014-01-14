@@ -281,10 +281,25 @@ blockquote{
 
 .primary-bg{
   background:$primary-color;
-}  
+} 
 
 .secondary-bg{
   background:$secondary-color;
+} 
+
+ 
+.white-bg{
+  background:white;
+  h1,h2,h3,h4,h5,p{
+    color:$text-color!important;
+  }
+} 
+
+.off-white-bg{
+  background:$light-gray-color;
+  h1,h2,h3,h4,h5,p{
+    color:$text-color!important;
+  }
 } 
 
 .bg-cover{
@@ -437,6 +452,9 @@ ul.inline{
 }
 .padding-left {
   padding-left: $baseline !important;
+}
+.double-padded {
+  padding: $baseline*2 !important;
 }
 .double-padding-top {
   padding-top: $baseline*2 !important;
@@ -725,10 +743,31 @@ footer{
   
 }
 
+//pricing
+  #pricing{
+    background:url(../images/pricing-clouds.png) center no-repeat $primary-color;
+    .price-table{
+      h1{
+        font-family:$light-font-name;
+        color:$primary-color!important;
+        font-size:3em;
+      }
+      h2{
+        font-size:1.5em;
+      }
+    }
+  }
+
+
 
 //responsify
 
 @media (max-width: 765px) {
+
+  .btn-xl{
+    padding:$baseline/2;
+    font-size:1em;
+  }
 
 //header
 
