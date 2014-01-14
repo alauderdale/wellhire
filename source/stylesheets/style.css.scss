@@ -573,8 +573,8 @@ a{
     background-color:$secondary-color;
     border-color:$secondary-color;
     &:hover{
-      border-color:$secondary-color;
-      background-color:shade($secondary-color,20%)!important;
+      border-color:tint($secondary-color,20%)!important;
+      background-color:tint($secondary-color,20%)!important;
     }
   }
   &.btn-default{
@@ -627,11 +627,15 @@ section{
           color:$primary-color;
           &:hover{
             background:none;
+            color:$primary-color;
           }
         }
       }
       a{
         @include transition-duration(.3s);
+        &:hover{
+          color:$primary-color;
+        }
       }
     }
   }

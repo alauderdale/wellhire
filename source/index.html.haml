@@ -1,3 +1,16 @@
+:javascript
+	$(document).ready(function(){
+
+		//page scroller call
+		$('#wrapper').pageScroller({
+
+	    navigation: 'li.scroller-link',
+	    scrollOffset: -50 ,
+	  animationSpeed: 1000  
+
+		});
+
+	});
 #wrapper
 	= partial "home/hero"
 	= partial "home/how_it_works"
