@@ -146,7 +146,7 @@ body{
   zoom:1;
 }
 
-// type
+// text-type
 
 h1 a, h2 a, h3 a, h4 a, h5 a, h6 a { 
   font-weight: inherit; 
@@ -201,6 +201,16 @@ blockquote{
 
 .enhanced-font{
   font-size:1.2em;
+}
+
+.text-line{
+    width: 100%;
+    height:5px;
+    background-color:tint($primary-color,50%);
+    float: left;
+    display:block;
+    position:relative;
+    top:20px;
 }
 
 //text columns
@@ -732,6 +742,12 @@ footer{
       text-align:center;
     }
     text-align:center;
+  }
+
+// how it works
+
+  .text-line{
+    display:none;
   }
 
 }

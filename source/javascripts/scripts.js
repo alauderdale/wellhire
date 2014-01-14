@@ -5,7 +5,7 @@ $(document).ready(function(){
 
     navigation: '#main-navigation',
     scrollOffset: -50 ,
-    animationSpeed: 1500  
+  animationSpeed: 1000  
 
 	});
 

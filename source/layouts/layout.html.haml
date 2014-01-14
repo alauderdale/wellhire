@@ -6,7 +6,8 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "Wellhire"
     = stylesheet_link_tag "bootstrap", "font-awesome" ,"style"
-    = javascript_include_tag "jquery","jquery.pagescroller.lite.js"," bootstrap", "scripts"
+    %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
+    = javascript_include_tag "jquery.pagescroller.lite.js"," bootstrap", "scripts"
   %body{:class => page_classes}
     = partial "layouts/main_menu"
     = yield
