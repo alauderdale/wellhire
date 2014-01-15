@@ -180,8 +180,8 @@ h6{
 
 p  {font-size: .9em; line-height:$baseline*1.1;}
 h1 { font-size: 2.4em; line-height:$baseline*2.1; color:shade($primary-color,50%);}
-h2 { font-size: 2em; line-height:$baseline*1.8;}
-h3 { font-size: 2em; line-height:$baseline*1.8; color:shade($primary-color,50%);}
+h2 { font-size: 1.8em; line-height:$baseline*1.7;}
+h3 { font-size: 1.8em; line-height:$baseline*1.7; color:shade($primary-color,50%);}
 h4 { font-size: 1.5em; line-height:$baseline;}
 h5 { font-size: 1em; line-height:$baseline*1.2;}
 h6 { font-size: 0.9em; line-height:$baseline;}
@@ -825,12 +825,12 @@ footer{
 }
 
 .rsBullet{
-  background:$light-gray-color;
+  background:#ddd;
   width: 20px;
   height:20px;
   z-index: 999;
   position:relative;
-  margin-top:6%;
+  margin-top:8%;
   margin-right:$baseline/2;
   border-radius:100px;
   display:inline-block;
@@ -962,7 +962,114 @@ footer{
 
 //responsify
 
+@media (max-width: 1199px) {
+
+  //nav
+
+  .logo{
+    width: 120px;
+    margin-top:5px;
+  }
+
+  .rsBullet{
+    margin-top:10%;
+  }
+
+}
+
+
+@media (max-width: 991px) {
+
+  body{
+    padding-top:71px;
+  }
+
+  //nav
+
+  .logo{
+    width: 90px;
+  }
+  .navbar {
+    padding:$baseline/4;
+  }
+  .navbar-brand{
+    padding-bottom:0;
+  }
+  #main-navigation{
+    ul.nav{
+      li{
+          font-size:.6em;
+        a{
+          padding:8px;
+        }
+      }
+    }
+  }
+
+  .rsBullet{
+    margin-top:10%;
+  }
+
+}
+
+
+
 @media (max-width: 768px) {
+
+  .navbar{
+    padding:0;
+    margin:0;
+    .navbar-brand{
+      padding-bottom:0;
+    }
+  }
+
+  #main-navigation{
+    ul.nav{
+      padding-bottom:$baseline/3;
+      margin-bottom:0;
+      li{
+          font-size:.8em;
+      }
+    }
+    .btn{
+      margin:$baseline/2 $baseline/3 0!important;
+    }
+  }
+
+  .logo{
+    margin:0;
+  }
+
+  //small text
+  body{
+    padding-top:52px;
+    font-size:13pt;
+  }
+
+  h1{
+    font-size:2em;
+    line-height:$baseline*1.6;
+  }
+
+  h2{
+    font-size:1.5em;
+    line-height:$baseline*1.25;
+  }
+
+  .text-right{
+    text-align:left;
+  }
+
+  section{
+    padding:$baseline*2 0;
+  }
+
+  .rsBullet{
+  margin-top:12%;
+  }
+
+  //end text
 
   .btn-xl{
     padding:$baseline/2;
@@ -973,6 +1080,7 @@ footer{
 
   .trial-btn{
     margin-left:0!important;
+    border-radius:0;
   }
 
   footer{
