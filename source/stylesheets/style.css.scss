@@ -375,6 +375,20 @@ ul.inline{
     }
 }
 
+//borders
+.border-top{
+  border-top:1px solid $gray-color;
+}
+.border-right{
+  border-right:1px solid $gray-color;
+}
+.border-bottom{
+  border-bottom:1px solid $gray-color;
+}
+.border-left{
+  border-left:1px solid $gray-color;
+}
+
 //social
 
 ul.social-nav{
@@ -608,11 +622,11 @@ a{
 .btn{
   font-family:$bold-font-name;
   @include transition-duration(.3s);
-  font-size:1.2em;
+  font-size:1em;
   letter-spacing:.5px;
   text-transform:uppercase;
   color:white!important;
-  padding:$baseline $baseline*2;
+  padding:$baseline/2 $baseline;
   &.btn-primary{
     background-color:$secondary-color;
     border-color:$secondary-color;
@@ -649,6 +663,9 @@ form{
   textarea{
      font-size:1em!important; 
      font-family:$light-font-name;
+  }
+  input{
+   
   }
 
 }
