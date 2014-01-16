@@ -7,7 +7,7 @@
 						Contact
 		.row
 			.col-lg-12
-				.text-center
+				.text-center.double-margin-bottom
 					%h4
 						Please feel free to contact us below!
 					%p
@@ -15,6 +15,11 @@
 						%a{:href=>"#"}
 							log in 
 						first before contacting us to receive prioritized support.
+				.row
+					.col-lg-3.col-md-3
+					.col-lg-6.col-md-6
+						= partial "home/form_contact"
+					.col-lg-3.col-md-3
 %section.contact-map
 	.container
 		.row

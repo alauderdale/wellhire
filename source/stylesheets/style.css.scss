@@ -612,6 +612,7 @@ a{
   letter-spacing:.5px;
   text-transform:uppercase;
   color:white!important;
+  padding:$baseline $baseline*2;
   &.btn-primary{
     background-color:$secondary-color;
     border-color:$secondary-color;
@@ -640,6 +641,16 @@ a{
 
 .btn-xl{
   padding:$baseline $baseline*2;
+}
+
+//forms
+
+form{
+  textarea{
+     font-size:1em!important; 
+     font-family:$light-font-name;
+  }
+
 }
 
 
