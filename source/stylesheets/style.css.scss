@@ -262,6 +262,13 @@ blockquote{
   }
 }
 
+.secondary-text-color{
+  color:$secondary-color!important;
+  p{
+    color:$secondary-color!important;
+  }
+}
+
 .white-text{
   h1,h2,h3,h4,h5,h6,p,a,blockquote{
     color:white!important;
@@ -785,6 +792,10 @@ footer{
   background:url(../images/hero_bg.png) no-repeat scroll center top;
   background-size: cover;
   text-align:center;
+  text-shadow:0 1px 6px rgba(0,0,0,.2);
+  .btn{
+    text-shadow:none;
+  }
   .hero-info{
     padding:0 0 $baseline*4 0;
   }
@@ -810,7 +821,14 @@ footer{
   h1,h2,h3,h4,h5,h6,p{
     color:$text-color!important;
   }
+  .test-th{
+    position: absolute;
+    width: 100%;
+    display: inline-table;
+    background: white;
+  }
   .test-table{
+    margin-top:76px;
     table{
       tbody{
         tr{
@@ -1130,6 +1148,15 @@ footer{
   .text-line{
     display:none;
   }
+
+//table
+
+.test-table{
+  font-size:.6em;
+  .text-right{
+    text-align:right;
+  }
+}
 
 //forms
 
