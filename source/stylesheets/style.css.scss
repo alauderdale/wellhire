@@ -825,10 +825,10 @@ footer{
     position: absolute;
     width: 100%;
     display: inline-table;
-    background: white;
+    background: rgba(255,255,255,.95);
   }
   .test-table{
-    margin-top:76px;
+    margin-top:121px;
     table{
       tbody{
         tr{
@@ -1088,6 +1088,7 @@ footer{
   }
 
   //small text
+
   body{
     padding-top:52px;
     font-size:13pt;
@@ -1128,7 +1129,7 @@ footer{
     font-size:1em;
   }
 
-//header
+  //header
 
   .trial-btn{
     margin-left:0!important;
@@ -1143,22 +1144,32 @@ footer{
     text-align:center;
   }
 
-// how it works
+  // how it works
 
   .text-line{
     display:none;
   }
 
-//table
+  //table
 
-.test-table{
-  font-size:.6em;
-  .text-right{
-    text-align:right;
+  .test-table{
+    font-size:.6em;
+    .text-right{
+      text-align:right;
+    }
   }
-}
 
-//forms
+  //modal
+
+  .modal{
+    font-size:.9em;
+    p,li,h4,h5,h6{
+      line-height:$baseline/1.2;
+    }
+    h2{
+      line-height:$baseline;
+    }
+  }
 
 }
 
