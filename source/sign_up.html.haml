@@ -2,16 +2,33 @@
 	.container
 		.row
 			.col-lg-12
-				.page-header.double-margin-bottom.inline-block.full-width
+				.page-header.margin-bottom.inline-block.full-width
 					.row
 						.col-sm-6
 							%h2.no-margin-bottom
-								Sign Up
+								Let's Get Started
 						.col-sm-6
 							%p.no-margin-bottom.half-margin-top.text-right
 								Already a member?
 								%a{:href=>"log_in.html"}
 									Log In Instead
+		.row
+			.col-lg-12
+				.off-white-bg.padded.double-margin-bottom.text-center
+					%h5
+						Simple Billing. Free 2-Day Trial.
+					%p
+						%strong.primary-text-color
+							$9.99 
+						per month. 
+						%strong
+							2 
+						Completed Tests Per Month. 
+						%strong.primary-text-color
+							$19.99 
+						for each additional test.
+						%strong
+							Includes all Wellhire features, prioritized support, risk free. Cancel any time. 
 		.row#sign-up
 			.col-sm-8
 				.double-margin-bottom
@@ -78,5 +95,25 @@
 							.col-sm-12
 								%button.btn.btn-default.pull-right{:type=>"submit"}
 									Sign Up
-			.col-sm-4
+			.col-sm-1
+			.col-sm-3
+				.testimonial.double-margin-bottom.double-margin-top
+					.padded.testimonial-bub.double-margin-bottom
+						%p
+							Lorem ipsum dolor sit amet, consecur aiscing elit.
+					.row
+						.col-xs-4
+							%img.img-circle.full-width-image{:src=>"images/avatar.png"}
+						.col-xs-8
+							%h5.no-margin-bottom
+								John Smith
+							%h6
+								Title
+				%h5
+					If its free to start, why do we ask?
+				%p
+					Should you decide to use Wellhire beyond the free trial period,
+					we'll use this payment method to charge your account and avoid
+					any disruption to your service.  
+
 
