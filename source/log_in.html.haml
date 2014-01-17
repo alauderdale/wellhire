@@ -3,74 +3,72 @@
 		.row
 			.col-lg-12
 				.page-header.double-margin-bottom.inline-block.full-width
-					%h2.no-margin-bottom.pull-left
-						Log In
-					%p.no-margin-bottom.pull-right
-						Not a member?
-						%a{:href=>"sign_up.html"}
-							Sign Up Now
+					.row
+						.col-sm-6
+							%h2.no-margin-bottom
+								Log In
+						.col-sm-6
+							%p.no-margin-bottom.half-margin-top.text-right
+								Not a member?
+								%a{:href=>"sign_up.html"}
+									Sign Up Now
 		.row#sign-in
-			.col-lg-6.border-right
+			.col-sm-6.border-right
 				.row
-					.col-lg-11
+					.col-sm-11
 						%p.text-center.double-margin-bottom
 							I'm a Wellhire member.
 						%form.form-horizontal{:role=>"form"}
 							.form-group
 								/ email
-								.margin-bottom.inline-block.full-width
-									.row
-										%lebel.col-sm-3.control-label{:for=>"inputEmail3"}
-											Email
-										.col-sm-9
-											%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
+								%lebel.col-sm-3.control-label{:for=>"inputEmail3"}
+									Email
+								.col-sm-9
+									%input.input-lg.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
 								/ password
-								.half-margin-bottom.inline-block.full-width
-									.row
-										%lebel.col-sm-3.control-label{:for=>"inputPassword3"}
-											password
-										.col-sm-9
-											%input.form-control{:type=>"password", :id=>"inputPassword3"}
-								.margin-bottom.inline-block.full-width
-									.row
-										.col-lg-12
-											%p.text-right.no-margin-bottom
-												%a{:href=>"#"}
-													Forgot Password?
+							.form-group
+								%lebel.col-sm-3.control-label{:for=>"inputPassword3"}
+									Password
+								.col-sm-9
+									%input.input-lg.form-control{:type=>"password", :id=>"inputPassword3"}
+							.form-group
+								.col-sm-12
+									%p.text-right
+										%a{:href=>"#"}
+											Forgot Password?
 									/button
-								.double-margin-bottom.inline-block.full-width
+							.form-group
+								.col-sm-12
 									%button.btn.btn-default.pull-right{:type=>"subnit"}
-										Submit
-					.col-lg-1
-			.col-lg-6
+										Log In
+					.col-sm-1
+			.col-sm-6
 				.row
-					.col-lg-11
+					.col-sm-11
 						%p.text-center.double-margin-bottom
-							I'm here for a test.
+							I’m here for a test.
 						%form.form-horizontal{:role=>"form"}
 							.form-group
 								/ email
-								.margin-bottom.inline-block.full-width
-									.row
-										%lebel.col-sm-3.control-label{:for=>"inputEmail3"}
-											Email
-										.col-sm-9
-											%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
-								/ pin
-								.half-margin-bottom.inline-block.full-width
-									.row
-										%lebel.col-sm-3.control-label{:for=>"inputPassword3"}
-											PIN
-										.col-sm-9
-											%input.form-control{:type=>"password", :id=>"inputPassword3"}
-								.margin-bottom.inline-block.full-width
-									.row
-										.col-lg-12
-											%p.text-right.no-margin-bottom
-												%a{:href=>"#"}
-													Forgot Pin?
+								%lebel.col-sm-3.control-label{:for=>"inputEmail3"}
+									Email
+								.col-sm-9
+									%input.input-lg.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
+								/ password
+							.form-group
+								%lebel.col-sm-3.control-label{:for=>"inputPassword3"}
+									PIN
+								.col-sm-9
+									%input.input-lg.form-control{:type=>"password", :id=>"inputPassword3"}
+							.form-group
+								.col-sm-12
+									%p.text-right
+										%a{:href=>"#"}
+											Forgot PIN?
 									/button
-								.double-margin-bottom.inline-block.full-width
+							.form-group
+								.col-sm-12
 									%button.btn.btn-default.pull-right{:type=>"subnit"}
-										Submit
-					.col-lg-1
+										Log In
+					.col-sm-1
+				

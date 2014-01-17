@@ -1,10 +1,11 @@
 %form{:role=>"form"}
 	.form-group
-		%select.form-control.margin-bottom
+		%select.input-lg.form-control
 			%option
 				I Have a Question
 			%option
 				Other
-		%textarea.form-control.margin-bottom{:rows=>"10", :placeholder=>"Your Message"}
-		%button.btn.btn-default.pull-right.full-width{:type=>"subnit"}
+	.form-group
+		%textarea.input-lg.form-control.margin-bottom{:rows=>"10", :placeholder=>"Your Message"}
+		%button.btn.btn-default.pull-right.full-width{:type=>"submit"}
 			Submit

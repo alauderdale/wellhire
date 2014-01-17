@@ -3,84 +3,80 @@
 		.row
 			.col-lg-12
 				.page-header.double-margin-bottom.inline-block.full-width
-					%h2.no-margin-bottom.pull-left
-						Sign Up
-					%p.no-margin-bottom.pull-right
-						Already a member?
-						%a{:href=>"log_in.html"}
-							Log In Instead
-		.row#sign-in
-			.col-lg-8
-				%p.double-margin-bottom
-					The Basics
-				%form.form-horizontal{:role=>"form"}
-					.form-group
-						/ email
-						.margin-bottom.inline-block.full-width
-							.row.has-success
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									Email
-								.col-sm-8
-									%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
-						/ first
-						.margin-bottom.inline-block.full-width
-							.row.has-error
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									First Name
-								.col-sm-8
-									%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:John"}
-						/ first
-						.margin-bottom.inline-block.full-width
-							.row
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									Last Name
-								.col-sm-8
-									%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:Doe"}
-				%p.double-margin-bottom
-					Payment
-				%form.form-horizontal{:role=>"form"}
-					.form-group
-						/ type
-						.margin-bottom.inline-block.full-width
-							.row
-								%lebel.col-sm-4.control-label{:for=>"inputTypel3"}
-									Card Type
-								.col-sm-8
-									%input.form-control{:type=>"email", :id=>"inputEmail3", :placeholder=>"ex:john@doe.com"}
-						/ number
-						.margin-bottom.inline-block.full-width
-							.row
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									Card Number
-								.col-sm-8
-									%input.form-control{:type=>"text", :id=>"inputNumberl3", :placeholder=>"ex:John"}
-						/exp
-						.margin-bottom.inline-block.full-width
-							.row
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									Expiration Date
-								.col-sm-4
-									%select.form-control{:for=>"inputEmail3"}
-										%option
-											01-Jan
-										%option
-											01-Feb
-								.col-sm-4
-									%select.form-control{:for=>"inputEmail3"}
-										%option
-											2014
-										%option
-											2015
-							/ CVV2 Code
-						.margin-bottom.inline-block.full-width
-							.row
-								%lebel.col-sm-4.control-label{:for=>"inputEmail3"}
-									CVV2 Code
-								.col-sm-8
-									%input.form-control{:type=>"text", :id=>"inputCodel3", :placeholder=>"ex:Doe"}
-						/ sign up
-						.margin-bottom.inline-block.full-width
-							%button.btn.btn-default.pull-right{:type=>"subnit"}
+					.row
+						.col-sm-6
+							%h2.no-margin-bottom
 								Sign Up
-			.col-lg-4
+						.col-sm-6
+							%p.no-margin-bottom.half-margin-top.text-right
+								Already a member?
+								%a{:href=>"log_in.html"}
+									Log In Instead
+		.row#sign-up
+			.col-sm-8
+				.double-margin-bottom
+					%p.double-margin-bottom
+						The Basics
+					%form.form-horizontal{:role=>"form"}
+						/ email
+						.form-group.has-success
+							%lebel.col-sm-4.control-label
+								Email
+							.col-sm-8
+								%input.input-lg.form-control{:type=>"email", :placeholder=>"ex:John@doe.com"}
+						/ first name
+						.form-group.has-error
+							%lebel.col-sm-4.control-label
+								First Name
+							.col-sm-8
+								%input.input-lg.form-control
+						/ last name
+						.form-group
+							%lebel.col-sm-4.control-label
+								Last Name
+							.col-sm-8
+								%input.input-lg.form-control
+				.double-margin-bottom
+					%p.double-margin-bottom
+						Payment Information
+					%form.form-horizontal{:role=>"form"}
+						/ card type
+						.form-group
+							%lebel.col-sm-4.control-label
+								Card Type
+							.col-sm-8
+								%select.input-lg.form-control
+									%option
+										Visa
+						/ card number
+						.form-group
+							%lebel.col-sm-4.control-label
+								Card Number
+							.col-sm-8
+								%input.input-lg.form-control
+						/ expiration date
+						.form-group
+							%lebel.col-sm-4.control-label
+								Expiration Date
+							.col-sm-8
+								.row
+									.col-sm-6
+										%select.input-lg.form-control
+											%option
+												01-Jan
+									.col-sm-6
+										%select.input-lg.form-control
+											%option
+												01-Jan
+						/ card type
+						.form-group
+							%lebel.col-sm-4.control-label
+								CVV2 Code
+							.col-sm-8
+								%input.input-lg.form-control
+						.form-group
+							.col-sm-12
+								%button.btn.btn-default.pull-right{:type=>"submit"}
+									Sign Up
+			.col-sm-4
 
