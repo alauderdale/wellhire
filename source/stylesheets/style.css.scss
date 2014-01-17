@@ -1087,6 +1087,11 @@ footer{
     margin:0;
   }
 
+  //hero
+  .logos{
+    display:none;
+  }
+
   //small text
 
   body{
@@ -1122,6 +1127,11 @@ footer{
   margin-top:12%;
   }
 
+  //icons
+  .icons{
+    text-align:center;
+  }
+
   //end text
 
   .btn-xl{
@@ -1135,6 +1145,8 @@ footer{
     margin-left:0!important;
     border-radius:0;
   }
+
+  //footer
 
   footer{
     .pull-right, .pull-left{
@@ -1169,6 +1181,16 @@ footer{
     h2{
       line-height:$baseline;
     }
+  }
+
+  //testimonials
+
+  .testimonial{
+    p{
+      font-size:.8em;
+      line-height:$baseline!important;
+    }
+
   }
 
 }
