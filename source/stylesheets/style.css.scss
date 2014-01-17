@@ -825,7 +825,8 @@ footer{
     position: absolute;
     width: 100%;
     display: inline-table;
-    background: rgba(255,255,255,.95);
+    background: white;
+    z-index: 200;
   }
   .test-table{
     margin-top:121px;
@@ -1197,6 +1198,14 @@ footer{
       line-height:$baseline!important;
     }
 
+  }
+
+  //video
+  #promo-video{
+    text-align:center;
+    .btn{
+      width: 100%;
+    }
   }
 
 }
