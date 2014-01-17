@@ -292,6 +292,7 @@ blockquote{
         margin:0;
         a{
           @include transition-duration(.3s);
+          text-decoration:none;
           &:hover{
             color:rgba(255,255,255,.5);
           }
@@ -963,7 +964,7 @@ footer{
 //PAGE: Contact
 
 .contact-map{
-  background:url(../images/contact-map.png);
+  background:url(../images/contact-map.jpg);
 }
 
 // modals
@@ -1022,6 +1023,11 @@ footer{
     margin-top:10%;
   }
 
+  .rsGCaption {
+    min-height:200px;
+  }
+
+
 }
 
 
@@ -1055,6 +1061,12 @@ footer{
 
   .rsBullet{
     margin-top:10%;
+  }
+
+  .icons{
+    img{
+      width: 100%;
+    }
   }
 
 }
