@@ -1,4 +1,4 @@
-%section.no-padding-top
+%section.no-padding-top{:style=>"padding-bottom:250px;"}
 	.container
 		.row
 			.col-lg-12
@@ -13,10 +13,10 @@
 								%a{:href=>"sign_up.html"}
 									Sign Up Now
 		.row#sign-in
-			.col-sm-6.border-right
+			.col-sm-6.border-right.padding-bottom.margin-bottom.member-login
 				.row
 					.col-sm-11
-						%p.text-center.double-margin-bottom
+						%p.text-center.double-margin-bottom.secondary-text-color
 							I'm a Wellhire member.
 						%form.form-horizontal{:role=>"form"}
 							.form-group
@@ -39,13 +39,13 @@
 									/button
 							.form-group
 								.col-sm-12
-									%button.btn.btn-default.pull-right{:type=>"subnit"}
+									%button.btn.btn-primary.pull-right{:type=>"subnit"}
 										Log In
 					.col-sm-1
 			.col-sm-6
 				.row
 					.col-sm-11
-						%p.text-center.double-margin-bottom
+						%p.text-center.double-margin-bottom.secondary-text-color
 							I’m here for a test.
 						%form.form-horizontal{:role=>"form"}
 							.form-group
@@ -68,7 +68,7 @@
 									/button
 							.form-group
 								.col-sm-12
-									%button.btn.btn-default.pull-right{:type=>"subnit"}
+									%button.btn.btn-primary.pull-right{:type=>"subnit"}
 										Log In
 					.col-sm-1
 				

@@ -6,9 +6,13 @@
     %meta{:content => "width=device-width, initial-scale=1.0", :name => "viewport"}
     %title= data.page.title || "Wellhire"
     = stylesheet_link_tag "bootstrap","royal-slider/royalslider","royal-slider/rs-default","fancybox/jquery.fancybox.css", "font-awesome" ,"style"
+    %link{href: "images/favicon.ico", rel: "shortcut icon"}/
     / %script{:src => "http://code.jquery.com/jquery-latest.min.js", :type => "text/javascript"}
     = javascript_include_tag"jquery", "jquery.pagescroller.lite.js","jquery.fancybox.pack.js","helpers/jquery.fancybox-media.js","jquery.royalslider"," bootstrap", "scripts"
   %body{:class => page_classes}
     = partial "layouts/main_menu"
+    /end menu
     = yield
+    /end main content
     = partial "layouts/footer"
+    /end footer

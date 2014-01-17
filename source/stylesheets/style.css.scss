@@ -609,8 +609,8 @@ ul.social-nav{
 
 a{
   color:$primary-color;
+  text-decoration:underline;
   &:hover{
-    text-decoration:none;
     color:shade($primary-color,50%);
   }
   &.white-link{
@@ -619,14 +619,12 @@ a{
       color:rgba(255,255,255,.7);
     }
   }
-  &.underline-link{
-    text-decoration:underline;
-  }
 }
 
 //buttons
 
 .btn{
+  text-decoration:none;
   font-family:$bold-font-name;
   @include transition-duration(.3s);
   font-size:1em;
@@ -715,6 +713,7 @@ section{
       }
       a{
         @include transition-duration(.3s);
+        text-decoration:none;
         &:hover{
           color:$primary-color;
         }
@@ -779,6 +778,7 @@ footer{
     color:white;
     margin-right:5px;
     text-transform:uppercase;
+    text-decoration:none;
     @include transition-duration(.3s);
     &:hover{
       color:rgba(255,255,255,.6);
@@ -789,7 +789,7 @@ footer{
 //hero
 
 #home-hero{
-  background:url(../images/hero_bg.png) no-repeat scroll center top;
+  background:url(../images/home_bg.jpg) $primary-color no-repeat scroll center top;
   background-size: cover;
   text-align:center;
   text-shadow:0 1px 6px rgba(0,0,0,.2);
@@ -1144,6 +1144,12 @@ footer{
   .trial-btn{
     margin-left:0!important;
     border-radius:0;
+  }
+
+  //login
+
+  .member-login{
+    border-bottom:3px solid $gray-color;
   }
 
   //footer

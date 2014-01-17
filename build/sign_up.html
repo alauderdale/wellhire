@@ -21,7 +21,7 @@
     <script src="javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="javascripts/scripts.js" type="text/javascript"></script>
   </head>
-  <body class='styles'>
+  <body class='sign_up'>
     <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class='container'>
@@ -72,43 +72,191 @@
       </div>
     </nav>
     <!-- end menu -->
-    <section>
+    <section class='no-padding-top'>
       <div class='container'>
         <div class='row'>
           <div class='col-lg-12'>
-            <h1>
-              Heading 1 that spans a couple lines for testing line height
-            </h1>
-            <h2>
-              Heading 2
-            </h2>
-            <h3>
-              Heading 3
-            </h3>
-            <h4>
-              Heading 4
-            </h4>
+            <div class='page-header margin-bottom inline-block full-width'>
+              <div class='row'>
+                <div class='col-sm-6'>
+                  <h2 class='no-margin-bottom'>
+                    Let's Get Started
+                  </h2>
+                </div>
+                <div class='col-sm-6'>
+                  <p class='no-margin-bottom half-margin-top text-right'>
+                    Already a member?
+                    <a href='log_in.html'>
+                      Log In Instead
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row'>
+          <div class='col-lg-12'>
+            <div class='off-white-bg double-padded double-margin-bottom text-center'>
+              <h5>
+                Simple Billing. Free 2-Day Trial.
+              </h5>
+              <p>
+                <strong class='primary-text-color'>
+                  $9.99
+                </strong>
+                per month.
+                <strong>
+                  2
+                </strong>
+                Completed Tests Per Month.
+                <strong class='primary-text-color'>
+                  $19.99
+                </strong>
+                for each additional test.
+                <strong>
+                  Includes all Wellhire features, prioritized support, risk free. Cancel any time.
+                </strong>
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class='row' id='sign-up'>
+          <div class='col-sm-8'>
+            <div class='double-margin-bottom'>
+              <p class='double-margin-bottom'>
+                The Basics
+              </p>
+              <form class='form-horizontal' role='form'>
+                <!-- email -->
+                <div class='form-group has-success'>
+                  <lebel class='col-sm-4 control-label'>
+                    Email
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <input class='input-lg form-control' placeholder='ex:John@doe.com' type='email'>
+                  </div>
+                </div>
+                <!-- first name -->
+                <div class='form-group has-error'>
+                  <lebel class='col-sm-4 control-label'>
+                    First Name
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <input class='input-lg form-control'>
+                  </div>
+                </div>
+                <!-- last name -->
+                <div class='form-group has-warning'>
+                  <lebel class='col-sm-4 control-label'>
+                    Last Name
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <input class='input-lg form-control'>
+                  </div>
+                </div>
+              </form>
+            </div>
+            <div class='double-margin-bottom'>
+              <p class='double-margin-bottom'>
+                Payment Information
+              </p>
+              <form class='form-horizontal' role='form'>
+                <!-- card type -->
+                <div class='form-group'>
+                  <lebel class='col-sm-4 control-label'>
+                    Card Type
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <select class='input-lg form-control'>
+                      <option>
+                        Visa
+                      </option>
+                    </select>
+                  </div>
+                </div>
+                <!-- card number -->
+                <div class='form-group'>
+                  <lebel class='col-sm-4 control-label'>
+                    Card Number
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <input class='input-lg form-control'>
+                  </div>
+                </div>
+                <!-- expiration date -->
+                <div class='form-group'>
+                  <lebel class='col-sm-4 control-label'>
+                    Expiration Date
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <div class='row'>
+                      <div class='col-sm-6'>
+                        <select class='input-lg form-control margin-bottom'>
+                          <option>
+                            01-Jan
+                          </option>
+                        </select>
+                      </div>
+                      <div class='col-sm-6'>
+                        <select class='input-lg form-control'>
+                          <option>
+                            2016
+                          </option>
+                        </select>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!-- card type -->
+                <div class='form-group'>
+                  <lebel class='col-sm-4 control-label'>
+                    CVV2 Code
+                  </lebel>
+                  <div class='col-sm-8'>
+                    <input class='input-lg form-control'>
+                  </div>
+                </div>
+                <div class='form-group'>
+                  <div class='col-sm-12'>
+                    <button class='btn btn-primary pull-right' type='submit'>
+                      Sign Up
+                    </button>
+                  </div>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class='col-sm-1'></div>
+          <div class='col-sm-3'>
+            <div class='testimonial double-margin-bottom double-margin-top'>
+              <div class='padded testimonial-bub double-margin-bottom'>
+                <p>
+                  Lorem ipsum dolor sit amet, consecur aiscing elit.
+                </p>
+              </div>
+              <div class='row'>
+                <div class='col-xs-4'>
+                  <img class='img-circle full-width-image' src='images/avatar.png'>
+                </div>
+                <div class='col-xs-8'>
+                  <h5 class='no-margin-bottom'>
+                    John Smith
+                  </h5>
+                  <h6>
+                    Title
+                  </h6>
+                </div>
+              </div>
+            </div>
             <h5>
-              Heading 5
+              If its free to start, why do we ask?
             </h5>
-            <h6>
-              Heading 6
-            </h6>
             <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
+              Should you decide to use Wellhire beyond the free trial period,
+              we'll use this payment method to charge your account and avoid
+              any disruption to your service.
             </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
-            </p>
-            <button class='btn btn-primary btn-xl'>
-              Try it free
-            </button>
-            <button class='btn btn-default btn-xl'>
-              Try it free
-            </button>
           </div>
         </div>
       </div>

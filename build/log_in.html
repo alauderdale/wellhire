@@ -21,7 +21,7 @@
     <script src="javascripts/bootstrap.js" type="text/javascript"></script>
     <script src="javascripts/scripts.js" type="text/javascript"></script>
   </head>
-  <body class='styles'>
+  <body class='log_in'>
     <nav class='navbar navbar-default navbar-fixed-top' role='navigation'>
       <!-- Brand and toggle get grouped for better mobile display -->
       <div class='container'>
@@ -72,43 +72,123 @@
       </div>
     </nav>
     <!-- end menu -->
-    <section>
+    <section class='no-padding-top' style='padding-bottom:250px;'>
       <div class='container'>
         <div class='row'>
           <div class='col-lg-12'>
-            <h1>
-              Heading 1 that spans a couple lines for testing line height
-            </h1>
-            <h2>
-              Heading 2
-            </h2>
-            <h3>
-              Heading 3
-            </h3>
-            <h4>
-              Heading 4
-            </h4>
-            <h5>
-              Heading 5
-            </h5>
-            <h6>
-              Heading 6
-            </h6>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
-            </p>
-            <p>
-              Lorem ipsum dolor sit amet, consectetur adipiscing elit. In suscipit sem nec tortor mattis sollicitudin. Donec molestie, ipsum eu sollicitudin commodo, urna sapien ullamcorper dolor, ac lacinia ipsum tortor ut elit. Morbi in elementum nisl. Proin pulvinar, urna malesuada
-            </p>
-            <button class='btn btn-primary btn-xl'>
-              Try it free
-            </button>
-            <button class='btn btn-default btn-xl'>
-              Try it free
-            </button>
+            <div class='page-header double-margin-bottom inline-block full-width'>
+              <div class='row'>
+                <div class='col-sm-6'>
+                  <h2 class='no-margin-bottom'>
+                    Log In
+                  </h2>
+                </div>
+                <div class='col-sm-6'>
+                  <p class='no-margin-bottom half-margin-top text-right'>
+                    Not a member?
+                    <a href='sign_up.html'>
+                      Sign Up Now
+                    </a>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class='row' id='sign-in'>
+          <div class='col-sm-6 border-right padding-bottom margin-bottom member-login'>
+            <div class='row'>
+              <div class='col-sm-11'>
+                <p class='text-center double-margin-bottom secondary-text-color'>
+                  I'm a Wellhire member.
+                </p>
+                <form class='form-horizontal' role='form'>
+                  <div class='form-group'>
+                    <!-- email -->
+                    <lebel class='col-sm-3 control-label' for='inputEmail3'>
+                      Email
+                    </lebel>
+                    <div class='col-sm-9'>
+                      <input class='input-lg form-control' id='inputEmail3' placeholder='ex:john@doe.com' type='email'>
+                    </div>
+                    <!-- password -->
+                  </div>
+                  <div class='form-group'>
+                    <lebel class='col-sm-3 control-label' for='inputPassword3'>
+                      Password
+                    </lebel>
+                    <div class='col-sm-9'>
+                      <input class='input-lg form-control' id='inputPassword3' type='password'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <p class='text-right'>
+                        <a href='#'>
+                          Forgot Password?
+                        </a>
+                      </p>
+                      <!-- button -->
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <button class='btn btn-primary pull-right' type='subnit'>
+                        Log In
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class='col-sm-1'></div>
+            </div>
+          </div>
+          <div class='col-sm-6'>
+            <div class='row'>
+              <div class='col-sm-11'>
+                <p class='text-center double-margin-bottom secondary-text-color'>
+                  I’m here for a test.
+                </p>
+                <form class='form-horizontal' role='form'>
+                  <div class='form-group'>
+                    <!-- email -->
+                    <lebel class='col-sm-3 control-label' for='inputEmail3'>
+                      Email
+                    </lebel>
+                    <div class='col-sm-9'>
+                      <input class='input-lg form-control' id='inputEmail3' placeholder='ex:john@doe.com' type='email'>
+                    </div>
+                    <!-- password -->
+                  </div>
+                  <div class='form-group'>
+                    <lebel class='col-sm-3 control-label' for='inputPassword3'>
+                      PIN
+                    </lebel>
+                    <div class='col-sm-9'>
+                      <input class='input-lg form-control' id='inputPassword3' type='password'>
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <p class='text-right'>
+                        <a href='#'>
+                          Forgot PIN?
+                        </a>
+                      </p>
+                      <!-- button -->
+                    </div>
+                  </div>
+                  <div class='form-group'>
+                    <div class='col-sm-12'>
+                      <button class='btn btn-primary pull-right' type='subnit'>
+                        Log In
+                      </button>
+                    </div>
+                  </div>
+                </form>
+              </div>
+              <div class='col-sm-1'></div>
+            </div>
           </div>
         </div>
       </div>

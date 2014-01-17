@@ -37,4 +37,14 @@ $(document).ready(function(){
     pageScroller.next();
 	});
 
+	//fancybox
+	$(".fancybox").fancybox();
+	
+	$('.fb-video').fancybox({
+        padding: 0,
+        helpers: {
+            media: {}
+        }
+    });
+
 });
